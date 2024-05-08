@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>Make your To-Do List!</h1>
+    <form id="addItemForm">
+        <label for="newItem">New ToDo Item:</label>
+        <input type="text" id="newItem">
+        <p><input type="submit" id="addItem" name="addItem" value="Add Item"></p>
+    </form>
+    <h2>Items to be completed:</h2>
+    <ul id="todo">
+
+    </ul>
+    <h2>Items completed:  <button id="deleteAll">Delete ALL Completed Items</button></h2>
+    <ul id="completed">
+    </ul>
+    
+<script src="app.js"></script>
+</body>
+</html>
