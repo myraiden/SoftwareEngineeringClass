@@ -12,9 +12,10 @@ const checkCompleted=localStorage.getItem('listCompletedItems',JSON.stringify(li
 
 //look for saved values in localStorage for current items
 //  OR create the complered items list in local storage
-if(checkWorking === null){
-    localStorage.setItem('listWorkingItems','');
-}else if(checkWorking !== ''){
+// if(checkWorking === null){
+//     localStorage.setItem('listWorkingItems','');
+// }else 
+if(checkWorking !== ''){
     listWorkingItems=JSON.parse(localStorage.getItem('listWorkingItems'));
     for(item in listWorkingItems){
         addItemToList(listWorkingItems[item],'working');
@@ -23,12 +24,13 @@ if(checkWorking === null){
 
 //look for saved values in localStorage for completed items
 //  OR create the completed items list in local storage
-if(checkCompleted === null){
-    localStorage.setItem('listCompletedItems','');
-}else if(checkCompleted !== ''){
+// if(checkCompleted === null){
+//     localStorage.setItem('listCompletedItems','');
+// }else 
+if(checkCompleted !== ''){
     listCompletedItems=JSON.parse(localStorage.getItem('listCompletedItems'));
     for(item in listCompletedItems){
-        addItemToList(listCompletedItems[item],'working');
+        addItemToList(listCompletedItems[item],'completed');
     }
 }
 
