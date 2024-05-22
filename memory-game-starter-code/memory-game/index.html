@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Memory Game!</h1>
+    <form id='buttonPalace'>
+      <fieldset id="fieldGame"> <legend>Choose Your Game Settings</legend>
+        
+        <p><label for="numberOfCards">Number of items to match (2 to 128):</label>
+          <input type="number" id="numberOfCards" min="2" max="128" value="5" step="1"></p>
+        <p><label for="showColorCode">Show Color Codes:</label>
+            <input type="radio" id="noCode" name="showColorCode" value="noCode" checked="true"><label for="noCode">No color Codes</label>
+            <input type="radio" id="hexCode" name="showColorCode" value="hexCode"><label for="hexCode">Hex Values</label>
+            <input type="radio" id="rgbCode" name="showColorCode" value="rgbCode"><label for="rgbCode">RGB Values</label>
+          </p>
+      </fieldset>
+      <br>
+    <fieldset id="fieldScore"><legend>Score Board</legend>
+      <label for="scoreBoard">Score:</label>
+        <input type="text" id="scoreBoard" readonly="true" size="5">
+        <label for="bestScoreVal" id="bestLabel">Best Score:</label>
+        <input type="text" id="bestScoreVal" readonly="true" size="5">
+     </fieldset>
+        <p><input type="button" id="resetButton" value="New Game"></p>
+    </form>
+    <div id="game">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
