@@ -1,0 +1,11 @@
+1. The 'man' command opens the reference manual for a specific command. 'man rm' will open the reference for the 'remove' function. Use the 'Enter' key to scroll, and press 'q' to exit.
+2. In the 'man ls' document, the '-l' flag will show a long listing format, and '-a' will show all entries, including those with a period at the beginning of the name.
+3. To jump between words in a MAC, use OPTION+left/right arrows, and on a Windows system, use ALT+left/right arrows.
+4. To jump to the end of a line in terminal, use COMMAND/CTRL+e.
+5. To jump to the beginning of a line in terminal, use COMMAND/CTRL+a.
+6. To delete a whole word in terminal, use COMMAND/CTRL+w.
+7. A terminal is the interface a user interacts with to enter command lines. A terminal runs a shell. A shell is the actual program which processes commands and returns output. 
+8. An absolute path is when the user references the series of directories: starting with the root first, and defining each susequent folder after. Absolute paths can be reached no matter where the user is.
+9. A relative path is only in relation to the user's current location within the directory. 
+10. A flag enables users to specifically define the behavior of a command, and can be combined to create unique effects such as moving entire directories with their subdirectories, including hidden files.
+11. In the 'rm' command, the '-r' flag will remove directories and their contents recursively, and the '-f' flag will ignore nonexistent files and arguments.
