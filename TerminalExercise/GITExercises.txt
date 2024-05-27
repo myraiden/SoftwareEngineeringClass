@@ -1,0 +1,33 @@
+1. mkdir learn_git_again
+2. cd learn_git_again
+3. touch third.txt
+4. git init
+5. git add third.txt
+6. git commit -m “adding third.txt”
+7. git log
+8. touch fourth.txt
+9. git add fourth.txt
+10. git commit -m “adding fourth.txt"
+11. rm third.txt
+12. git add .
+13. git commit -m “removing third.txt”
+14. git log
+commit bed0d6dae98acabbb5c962725f2c50ed49b95057 (HEAD -> master)
+Author: myraiden <myraiden@Cardamom>
+Date:   Mon May 27 16:35:05 2024 -0400
+
+    removing third.txt
+
+commit a1a113d62232f104a1ac253738b4262aef1bbb84
+Author: myraiden <myraiden@Cardamom>
+Date:   Mon May 27 16:34:20 2024 -0400
+
+    adding fourth.txt
+
+commit 64e24d14807a52b1911d78c520866647445c6d3a
+Author: myraiden <myraiden@Cardamom>
+Date:   Mon May 27 16:33:13 2024 -0400
+
+    adding third.txt
+15. git config --global core.pager "cat"
+16. git config --global --list
