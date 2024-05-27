@@ -1,0 +1,12 @@
+Part 1 
+1. git checkout  -b <newbranchname>
+2. A fast-forward merge is 'one stright line' that is merged into the master/main project. Recursive merge brings new features in a  master/main that has had other changes already made to it.
+3. git checkout <branchname>
+4. git branch -d <branchname> deletes a branch with saved work. git branch -D <branchname> will delete a branch regardless if there is saved or unsaved changes.
+5. Merge conflicts happen when multiple branches have changed the same lines of code and they no longer match. Git may not know which changes are to be prioritized.
+
+Part II
+
+Practice with fast forward and recursive merges! Make a branch and add and commit onto it and merge it back into master.
+
+Try to create your own merge conflict by modifying the same file on two separate commits on two separate branches.
